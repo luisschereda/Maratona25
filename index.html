@@ -1,115 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ajuda Financeira</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajuda Financeira</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
-<div class="logo">💰 Ajuda Financeira</div>
-<nav>
-<ul>
-<li><a href="#imposto">Imposto de Renda</a></li>
-<li><a href="#fgts">FGTS</a></li>
-<li><a href="#direitos">Direitos Trabalhistas</a></li>
-<li><a href="#inss">INSS</a></li>
-<li><a href="#aposentadoria">Aposentadoria</a></li>
-<li><a href="#saques">Saques</a></li>
-<li><a href="#bancos">Bancos</a></li>
-<li><a href="#outros">Outros</a></li>
-</ul>
-</nav>
-</header>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">💰 Ajuda Financeira</div>
+    <nav>
+      <ul>
+        <li><a href="#imposto">Imposto de Renda</a></li>
+        <li><a href="#fgts">FGTS</a></li>
+        <li><a href="#direitos">Direitos Trabalhistas</a></li>
+        <li><a href="#inss">INSS</a></li>
+        <li><a href="#aposentadoria">Aposentadoria</a></li>
+        <li><a href="#saques">Saques</a></li>
+        <li><a href="#bancos">Bancos</a></li>
+        <li><a href="#outros">Outros</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Barra de Pesquisa -->
+  <section class="search-section">
+    <h1>Encontre respostas para suas dúvidas financeiras</h1>
+    <input type="text" id="searchBar" placeholder="Digite aqui sua dúvida...">
+  </section>
 
-<main>
-<section class="search-section">
-<input type="text" id="search" placeholder="Pesquise sua dúvida...">
-</section>
+  <!-- Conteúdo -->
+  <main>
+    <section id="imposto" class="card">
+      <h2>Imposto de Renda</h2>
+      <p>Saiba como declarar corretamente o seu IR e evitar problemas com a Receita Federal.</p>
+      <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" class="btn">Acessar Receita Federal</a>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/3ybV_1vXr-s" title="Imposto de Renda"></iframe>
+      </div>
+    </section>
 
+    <section id="fgts" class="card">
+      <h2>FGTS</h2>
+      <p>Informações sobre saques, depósitos e direitos relacionados ao FGTS.</p>
+      <a href="https://www.caixa.gov.br/fgts" target="_blank" class="btn">Site da Caixa FGTS</a>
+    </section>
 
-<section id="imposto" class="card">
-<h2>Imposto de Renda</h2>
-<p>Dicas práticas e informações sobre declaração do imposto de renda.</p>
-<a href="https://www.gov.br/receitafederal" target="_blank" class="btn">Acessar Receita Federal</a>
-<div class="video">
-<iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-</div>
-</section>
+    <!-- Repita cards para cada seção -->
+    <section id="direitos" class="card"><h2>Direitos Trabalhistas</h2><p>Guia sobre direitos e deveres do trabalhador no Brasil.</p></section>
+    <section id="inss" class="card"><h2>INSS</h2><p>Contribuições e benefícios previdenciários explicados.</p></section>
+    <section id="aposentadoria" class="card"><h2>Aposentadoria</h2><p>Planeje sua aposentadoria com clareza e segurança.</p></section>
+    <section id="saques" class="card"><h2>Saques</h2><p>Saiba como realizar saques de benefícios e contas.</p></section>
+    <section id="bancos" class="card"><h2>Bancos</h2><p>Compare bancos e conheça seus direitos como cliente.</p></section>
+    <section id="outros" class="card"><h2>Outros</h2><p>Outros tópicos financeiros para o seu dia a dia.</p></section>
+  </main>
 
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Ajuda Financeira | Contato: suporte@ajudafinanceira.com</p>
+  </footer>
 
-<section id="fgts" class="card">
-<h2>FGTS</h2>
-<p>Entenda como funciona o saque e uso do FGTS.</p>
-<a href="https://www.caixa.gov.br/fgts" target="_blank" class="btn">Site Oficial FGTS</a>
-</section>
-
-
-<section id="direitos" class="card">
-<h2>Direitos Trabalhistas</h2>
-<p>Informações essenciais sobre seus direitos no trabalho.</p>
-<a href="https://www.gov.br/trabalho" target="_blank" class="btn">Mais Informações</a>
-</section>
-
-
-<section id="inss" class="card">
-<h2>INSS</h2>
-<p>Saiba como funciona a contribuição e benefícios do INSS.</p>
-<a href="https://www.gov.br/inss" target="_blank" class="btn">Site Oficial INSS</a>
-</section>
-
-
-<section id="aposentadoria" class="card">
-<h2>Aposentadoria</h2>
-<p>Guia prático para planejar sua aposentadoria.</p>
-<a href="https://www.gov.br/inss/pt-br/assuntos/aposentadoria" target="_blank" class="btn">Planeje-se</a>
-</section>
-
-
-<section id="saques" class="card">
-<h2>Saques</h2>
-<p>Informações sobre diferentes tipos de saques e como realizá-los.</p>
-</section>
-
-
-<section id="bancos" class="card">
-<h2>Bancos</h2>
-<p>Dicas para lidar com bancos, tarifas e serviços financeiros.</p>
-</section>
-
-
-<section id="outros" class="card">
-<h2>Outros</h2>
-<p>Outros temas financeiros importantes para você.</p>
-</section>
-</main>
-
-
-<footer>
-<p>© 2025 Ajuda Financeira - Todos os direitos reservados</p>
-<p>Contato: contato@ajudafinanceira.com</p>
-</footer>
-
-
-<button id="back-to-top">⬆</button>
-
-
-<script>
-// Filtro de busca
-const searchInput = document.getElementById('search');
-searchInput.addEventListener('input', () => {
-const value = searchInput.value.toLowerCase();
-document.querySelectorAll('main .card').forEach(card => {
-card.style.display = card.innerText.toLowerCase().includes(value) ? 'block' : 'none';
-});
-});
-
-
-// Voltar ao topo
-const btn = document.getElementById('back-to-top');
-btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-</script>
+  <script src="js/script.js"></script>
 </body>
 </html>
