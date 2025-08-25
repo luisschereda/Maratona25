@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ajuda Financeira</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Cabeçalho -->
@@ -12,14 +13,14 @@
     <div class="logo">💰 Ajuda Financeira</div>
     <nav>
       <ul>
-        <li><a href="#imposto">Imposto de Renda</a></li>
-        <li><a href="#fgts">FGTS</a></li>
-        <li><a href="#direitos">Direitos Trabalhistas</a></li>
-        <li><a href="#inss">INSS</a></li>
-        <li><a href="#aposentadoria">Aposentadoria</a></li>
-        <li><a href="#saques">Saques</a></li>
-        <li><a href="#bancos">Bancos</a></li>
-        <li><a href="#outros">Outros</a></li>
+        <li><a href="pages/imposto.html">Imposto de Renda</a></li>
+        <li><a href="pages/fgts.html">FGTS</a></li>
+        <li><a href="pages/direitos.html">Direitos Trabalhistas</a></li>
+        <li><a href="pages/inss.html">INSS</a></li>
+        <li><a href="pages/aposentadoria.html">Aposentadoria</a></li>
+        <li><a href="pages/saques.html">Saques</a></li>
+        <li><a href="pages/bancos.html">Bancos</a></li>
+        <li><a href="pages/outros.html">Outros</a></li>
       </ul>
     </nav>
   </header>
@@ -27,33 +28,37 @@
   <!-- Barra de Pesquisa -->
   <section class="search-section">
     <h1>Encontre respostas para suas dúvidas financeiras</h1>
-    <input type="text" id="searchBar" placeholder="Digite aqui sua dúvida...">
+    <div class="search-box">
+      <input type="text" id="searchBar" placeholder="Digite aqui sua dúvida...">
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
+    </div>
   </section>
 
-  <!-- Conteúdo -->
+  <!-- Conteúdo de destaque -->
   <main>
-    <section id="imposto" class="card">
-      <h2>Imposto de Renda</h2>
-      <p>Saiba como declarar corretamente o seu IR e evitar problemas com a Receita Federal.</p>
-      <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" class="btn">Acessar Receita Federal</a>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/3ybV_1vXr-s" title="Imposto de Renda"></iframe>
-      </div>
+    <section class="intro">
+      <h2>Organize sua vida financeira com facilidade</h2>
+      <p>Escolha o tema desejado no menu ou pesquise sua dúvida para ser direcionado à página certa.</p>
     </section>
 
-    <section id="fgts" class="card">
-      <h2>FGTS</h2>
-      <p>Informações sobre saques, depósitos e direitos relacionados ao FGTS.</p>
-      <a href="https://www.caixa.gov.br/fgts" target="_blank" class="btn">Site da Caixa FGTS</a>
-    </section>
-
-    <!-- Repita cards para cada seção -->
-    <section id="direitos" class="card"><h2>Direitos Trabalhistas</h2><p>Guia sobre direitos e deveres do trabalhador no Brasil.</p></section>
-    <section id="inss" class="card"><h2>INSS</h2><p>Contribuições e benefícios previdenciários explicados.</p></section>
-    <section id="aposentadoria" class="card"><h2>Aposentadoria</h2><p>Planeje sua aposentadoria com clareza e segurança.</p></section>
-    <section id="saques" class="card"><h2>Saques</h2><p>Saiba como realizar saques de benefícios e contas.</p></section>
-    <section id="bancos" class="card"><h2>Bancos</h2><p>Compare bancos e conheça seus direitos como cliente.</p></section>
-    <section id="outros" class="card"><h2>Outros</h2><p>Outros tópicos financeiros para o seu dia a dia.</p></section>
+    <div class="cards-container">
+      <a href="pages/imposto.html" class="card">
+        <h3>📑 Imposto de Renda</h3>
+        <p>Saiba como declarar seu IR corretamente.</p>
+      </a>
+      <a href="pages/fgts.html" class="card">
+        <h3>💵 FGTS</h3>
+        <p>Tudo sobre depósitos, saques e direitos.</p>
+      </a>
+      <a href="pages/inss.html" class="card">
+        <h3>🏦 INSS</h3>
+        <p>Benefícios e contribuições explicados.</p>
+      </a>
+      <a href="pages/aposentadoria.html" class="card">
+        <h3>👴 Aposentadoria</h3>
+        <p>Planeje sua aposentadoria com clareza.</p>
+      </a>
+    </div>
   </main>
 
   <!-- Rodapé -->
