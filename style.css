@@ -1,0 +1,82 @@
+body {
+border: none;
+border-radius: 5px;
+}
+
+
+.card {
+background: #222;
+margin: 20px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.card h2 {
+color: #FF0000;
+}
+
+
+.card .btn {
+display: inline-block;
+margin-top: 10px;
+padding: 10px 15px;
+background: #8B0000;
+color: #fff;
+border-radius: 5px;
+text-decoration: none;
+}
+
+
+footer {
+background: #000;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
+
+
+#back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #FF0000;
+color: #fff;
+border: none;
+padding: 10px 15px;
+border-radius: 50%;
+cursor: pointer;
+display: none;
+}
+
+
+#back-to-top.show {
+display: block;
+}
+
+
+@media (max-width: 768px) {
+nav ul {
+flex-direction: column;
+background: #8B0000;
+position: absolute;
+top: 60px;
+right: 0;
+width: 200px;
+display: none;
+}
+
+
+nav ul.show {
+display: flex;
+}
+
+
+nav::before {
+content: "☰";
+font-size: 1.5em;
+cursor: pointer;
+color: #fff;
+}
+}
